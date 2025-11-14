@@ -24,7 +24,7 @@ export default function TravelPackages() {
           <div className="rounded-xl shadow-lg border border-gray-100 overflow-hidden pb-6">
             <div className="relative h-[200px]">
               <Image
-                src="/mountain-peak-snow.jpg"
+                src="/images/rectangle19306.png"
                 alt="Switzerland"
                 fill
                 className="object-cover"
@@ -72,7 +72,7 @@ export default function TravelPackages() {
           <div className="rounded-xl shadow-lg border border-gray-100 overflow-hidden pb-6">
             <div className="relative h-[200px]">
               <Image
-                src="/mountain-peak-snow.jpg"
+                src="/images/rectangle19307-1.png"
                 alt="Brazil"
                 fill
                 className="object-cover"
