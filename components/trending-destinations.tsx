@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function TrendingDestinations() {
   return (
-    <section className="w-full max-w-7xl mx-auto py-20 px-6 md:px-20 relative">
+    <section className="w-full max-w-7xl mx-auto py-5 md:py-20 px-6 md:px-20 relative">
 
       {/* RIGHT MAIN IMAGE — ABSOLUTE BEHIND EVERYTHING */}
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 pointer-events-none -z-10">
-        <div className="w-[340px] md:w-[450px] h-[540px] md:h-[620px] overflow-hidden rounded-t-full">
+      <div className="hidden md:block md:absolute md:top-1/2 md:right-0 md:-translate-y-1/2 md:pointer-events-none -z-10 pb-5 md:pb-0">
+        <div className="w-[340px] md:w-[450px] h-[480px] md:h-[650px]">
           <Image
             src="/images/paris-tower.png"
             alt="Eiffel Tower"
@@ -15,16 +15,10 @@ export default function TrendingDestinations() {
             className="object-cover w-full h-full"
           />
         </div>
-
-        {/* Vertical Text */}
-        <p className="absolute right-0 top-1/2 -translate-y-1/2 rotate-90 
-          text-gray-300 text-2xl md:text-3xl font-semibold whitespace-nowrap">
-          Breath Taking Views
-        </p>
       </div>
 
       {/* MAIN CONTENT */}
-      <div className="flex flex-col md:flex-row items-start justify-between gap-20 relative z-20">
+      <div className="flex flex-col md:flex-row items-start justify-between gap-5 md:gap-20 relative z-20">
 
         {/* LEFT CONTENT */}
         <div className="w-full">
@@ -48,7 +42,7 @@ export default function TrendingDestinations() {
           </button>
 
           {/* DESTINATION CARDS — 4 IMAGES TOGETHER */}
-          <div className="mt-10 flex gap-10">
+          <div className="mt-10 grid grid-cols-2 md:flex gap-2 md:gap-10">
 
             {[
               { price: "$700", src: "/images/destination1.png", color: "bg-red-500" },
@@ -58,7 +52,7 @@ export default function TrendingDestinations() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="relative rounded-xl overflow-hidden shadow-lg w-[200px] h-[200px]"
+                className="relative rounded-xl overflow-hidden shadow-lg md:w-[200px] md:h-[200px]"
               >
                 <Image
                   src={item.src}
@@ -80,6 +74,19 @@ export default function TrendingDestinations() {
 
         </div>
       </div>
+
+       {/* RIGHT MAIN IMAGE — ABSOLUTE BEHIND EVERYTHING
+      <div className="hidden md:block md:absolute md:top-1/2 md:right-0 md:-translate-y-1/2 md:pointer-events-none -z-10 pt-5 md:pb-0">
+        <div className="w-[340px] md:w-[450px] h-[480px] md:h-[650px]">
+          <Image
+            src="/images/paris-tower.png"
+            alt="Eiffel Tower"
+            width={800}
+            height={1000}
+            className="object-cover w-full h-full"
+          />
+        </div>
+      </div> */}
 
     </section>
   );

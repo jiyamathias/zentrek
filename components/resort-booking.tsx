@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function ResortBookingSection() {
   return (
-    <section className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between py-20 md:px-20">
+    <section className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between pt-10">
       
       {/* LEFT SIDE TEXT */}
-      <div className="w-full md:w-1/2 z-10">
+      <div className="w-full md:w-1/2 z-10 px-6 md:px-20">
         <p className="text-sm text-blue-600 font-semibold tracking-wider">
           Fast & Easy
         </p>
@@ -68,16 +68,16 @@ export default function ResortBookingSection() {
       </div>
 
       {/* RIGHT SIDE: Single Image + Blue Glow */}
-      <div className="w-full md:w-1/2 h-[650px] flex justify-center md:justify-end mt-16 md:mt-0">
+      <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+      <div className="h-[460px] md:h-[620px]">
           <Image
             src="/images/flight-destination.png"
             width={500}
             height={500}
-            //  width={420}
-            // height={800}
             alt="Resort Showcase"
             className="object-cover w-full h-full"
           />
+        </div>
       </div>
 
     </section>

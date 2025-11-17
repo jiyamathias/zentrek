@@ -5,7 +5,7 @@ export default function HoneymoonSection() {
     <section className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between py-20 px-6 md:px-20 gap-10">
       {/* Left Side Image with BG */}
       <div className="w-full md:w-3/5 flex justify-center items-center">
-        <div className="h-[620px]">
+        <div className="h-[420px] md:h-[620px]">
           <Image
             width={420}
             height={800}
