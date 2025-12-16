@@ -32,7 +32,7 @@ const Navigation = () => {
               Explore
             </a>
           </div>
-          <button className="bg-secondary hover:bg-orange-600 text-white px-6 py-2 rounded-lg text-sm font-semibold transition-all">
+          <button className="bg-secondary hidden md:block hover:bg-orange-600 text-white px-6 py-2 rounded-lg text-sm font-semibold transition-all">
               Get In Touch
           </button>
           {/* Mobile Menu Button */}
