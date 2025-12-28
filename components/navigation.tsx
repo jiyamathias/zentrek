@@ -19,13 +19,13 @@ const Navigation = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#home" className="text-sm text-white hover:text-secondary transition">
+            <a href="/" className="text-sm text-white hover:text-secondary transition">
               Home
             </a>
-            <a href="#about" className="text-sm text-white hover:text-secondary transition">
+            <a href="/about" className="text-sm text-white hover:text-secondary transition">
               About
             </a>
-            <a href="#gallery" className="text-sm text-white hover:text-secondary transition">
+            <a href="/gallery" className="text-sm text-white hover:text-secondary transition">
               Gallery
             </a>
             <a href="#explore" className="text-sm text-white hover:text-secondary transition">
