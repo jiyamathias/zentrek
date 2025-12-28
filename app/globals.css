@@ -124,62 +124,50 @@
   }
 
   @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
   @keyframes slideInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
   }
 
   @keyframes slideInRight {
-    from {
-      opacity: 0;
-      transform: translateX(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
   }
 
   @keyframes scaleIn {
-    from {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
   }
 
-  .animate-fade-in-up {
-    animation: fadeInUp 0.8s ease-out forwards;
+  .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+  .animate-slide-in-left { animation: slideInLeft 0.8s ease-out forwards; }
+  .animate-slide-in-right { animation: slideInRight 0.8s ease-out forwards; }
+  .animate-scale-in { animation: scaleIn 0.6s ease-out forwards; }
+
+  /* 🎨 Professional Global Input Styling */
+  input,
+  textarea,
+  select {
+    @apply w-full rounded-lg border border-input bg-card px-4 py-3 text-base shadow-sm transition-all;
+    @apply focus:ring-2 focus:ring-primary focus:border-primary focus:outline-none;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
   }
 
-  .animate-slide-in-left {
-    animation: slideInLeft 0.8s ease-out forwards;
+  input:hover,
+  textarea:hover,
+  select:hover {
+    @apply border-primary/50;
   }
 
-  .animate-slide-in-right {
-    animation: slideInRight 0.8s ease-out forwards;
+  .form-label {
+    @apply block mb-1 text-sm font-medium text-muted-foreground;
   }
 
-  .animate-scale-in {
-    animation: scaleIn 0.6s ease-out forwards;
+  .form-group {
+    @apply flex flex-col gap-1 mb-4;
   }
 }
