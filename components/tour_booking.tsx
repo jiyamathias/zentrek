@@ -6,10 +6,10 @@ const TourBookingSection: React.FC = () => {
   return (
     <section className="w-full bg-white flex justify-center py-24 px-4">
       {/* Outer container */}
-      <div className="max-w-7xl w-full bg-white shadow-xl rounded-2xl p-8 relative">
+      <div className="max-w-6xl w-full bg-white shadow-xl rounded-2xl p-8 relative">
 
         {/* GRID CONTENT */}
-        <div className="grid md:grid-cols-3 gap-16 items-stretch">
+        <div className="grid md:grid-cols-3 gap-7 items-stretch">
           {/* LEFT */}
           <div className="md:col-span-2 flex flex-col">
             <h2 className="text-3xl font-bold mb-6 text-[#1D2434]">Tour Plan</h2>
@@ -72,8 +72,8 @@ const TourBookingSection: React.FC = () => {
           <Image
             src="/images/273 1.png"
             alt="Travel luggage"
-            width={340}
-            height={340}
+            width={500}
+            height={500}
             className="object-contain"
           />
         </div>

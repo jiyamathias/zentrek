@@ -28,7 +28,7 @@ const Navigation = () => {
             <a href="/gallery" className="text-sm text-white hover:text-secondary transition">
               Gallery
             </a>
-            <a href="#explore" className="text-sm text-white hover:text-secondary transition">
+            <a href="/explore" className="text-sm text-white hover:text-secondary transition">
               Explore
             </a>
           </div>
