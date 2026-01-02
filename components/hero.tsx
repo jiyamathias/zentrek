@@ -15,7 +15,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center animate-fade-in-up">
-          <div className="inline-block text-secondary text-sm font-semibold mb-4">EXPLORE THE WORLD</div>
+          <div className="inline-block text-orange-500 text-sm font-semibold mb-4">EXPLORE THE WORLD</div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 text-balance leading-tight">
             No matter where you&apos;re going, we&apos;ll take you there
           </h1>
@@ -35,7 +35,7 @@ const Hero = () => {
                 placeholder="Duration"
                 className="bg-white/20 text-white placeholder-white/50 rounded px-3 py-2 text-sm"
               />
-              <button className="bg-secondary hover:bg-orange-600 text-white rounded px-4 py-2 font-semibold text-sm transition">
+              <button className="bg-orange-500 hover:bg-orange-600 text-white rounded px-4 py-2 font-semibold text-sm transition">
                 Add
               </button>
             </div>
